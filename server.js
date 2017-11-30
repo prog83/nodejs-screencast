@@ -1,4 +1,4 @@
-var log = require('./logger')(module);
+var log = require('./log')(module);
 var db = require('./db');
 db.connect();
 
@@ -9,7 +9,7 @@ function run() {
   let vasya = new User('Вася');
 
   vasya.hello(petya);
-  log(db.getPhrase('Run successful'));
+  log.info(db.getPhrase('Run successful'));
 }
 
 if (module.parent) {

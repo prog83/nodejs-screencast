@@ -2,6 +2,6 @@
   "name": "nodejs-screencast",
   "version": "0.0.1",
   "dependencies": {
-    
+    "winston": "^2.4.0"
   }
 }
